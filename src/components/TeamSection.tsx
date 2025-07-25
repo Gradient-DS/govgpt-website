@@ -5,7 +5,7 @@ export const TeamSection = () => {
   const teamMembers = [
     {
       name: "Daniel",
-      role: "Executive Advisor",
+      role: "Executive Chairman",
       description: "Samenwerking & Visie",
       image: "👨‍💼"
     },
