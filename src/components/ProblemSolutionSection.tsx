@@ -1,5 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertTriangle, Shield, Zap, Users, Globe, Wrench, CheckCircle2 } from "lucide-react";
+import {
+  AlertTriangle,
+  Shield,
+  Users,
+  CheckCircle2,
+  Globe,
+  BrainCog
+} from "lucide-react";
 
 export const ProblemSolutionSection = () => {
   const problems = [
@@ -10,54 +17,32 @@ export const ProblemSolutionSection = () => {
     },
     {
       icon: Shield,
-      title: "ChatGPT en Copilot verboden",
-      description: "Vanwege security risico's in overheden"
+      title: "ChatGPT verboden in overheden",
+      description: "Vanwege security- en datarisico’s bij verwerking van overheidsdata"
     },
     {
       icon: Users,
       title: "Personeelstekorten",
-      description: "Vragen om slimme ondersteuning en automatisering"
-    },
-    {
-      icon: Globe,
-      title: "Digitalisering investeringen",
-      description: "Nederland investeert miljarden in digitale transformatie"
+      description: "Vragen om slimme digitale ondersteuning en efficiënte processen"
     }
   ];
 
-  const solutions = [
-    {
-      icon: Shield,
-      title: "ChatGPT-ervaring, maar veilig",
-      description: "Dezelfde gebruiksvriendelijkheid, maar dan veiliger, sneller en verantwoordelijk"
-    },
-    {
-      icon: Globe,
-      title: "100% EU-hosted",
-      description: "ISO 27001-compliant infrastructuur, volledig open-source en transparant"
-    },
-    {
-      icon: Wrench,
-      title: "Flexibel inzetbaar",
-      description: "Keuze tussen SaaS-oplossing of volledig on-premise implementatie"
-    }
-  ];
-
-  const benefits = [
+  const solutionPoints = [
     {
       icon: CheckCircle2,
-      title: "Geen vendor lock-in",
-      description: "Volledige keuzevrijheid in AI-modellen en leveranciers"
+      title: "Compliant by design",
+      description: "Voldoet direct aan EU AI Act, GDPR en ISO 27001 — zonder omwegen of achterafplakwerk"
     },
     {
-      icon: Users,
-      title: "Chain of Craft™ aanpak",
-      description: "Unieke methode voor behoud van menselijke autonomie en controle"
+      icon: Globe,
+      title: "Flexibel en soeverein",
+      description: "Open-source, 100% EU-hosted en zonder vendor lock-in — inzetbaar als SaaS of volledig on-premise"
     },
     {
-      icon: Zap,
-      title: "Ervaren team",
-      description: "Getraind team met jarenlange overheids-ervaring en top-partners"
+      icon: BrainCog,
+      title: "Mensgerichte AI met Chain of Craft™",
+      description:
+        "Onze unieke aanpak versterkt menselijk denken met bronvermelding, reflectiemomenten en verantwoording op elke stap"
     }
   ];
 
@@ -74,8 +59,8 @@ export const ProblemSolutionSection = () => {
               De wereld van AI verandert snel. Overheden staan voor uitdagingen die directe actie vereisen.
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div className="grid md:grid-cols-3 gap-6">
             {problems.map((problem, index) => (
               <Card key={index} className="shadow-card hover-scale border-l-4 border-l-accent">
                 <CardContent className="p-6">
@@ -83,9 +68,7 @@ export const ProblemSolutionSection = () => {
                   <h3 className="text-lg font-semibold mb-2 text-card-foreground">
                     {problem.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {problem.description}
-                  </p>
+                  <p className="text-muted-foreground">{problem.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -93,7 +76,7 @@ export const ProblemSolutionSection = () => {
         </div>
 
         {/* Solution Section */}
-        <div className="mb-20 animate-slide-up">
+        <div className="animate-slide-up">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
               GovGPT is <span className="text-accent">de oplossing</span>
@@ -102,50 +85,18 @@ export const ProblemSolutionSection = () => {
               Alle voordelen van moderne AI, zonder de nadelen. Speciaal ontworpen voor de publieke sector.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
-            {solutions.map((solution, index) => (
+            {solutionPoints.map((point, index) => (
               <Card key={index} className="shadow-card hover-scale bg-card">
                 <CardContent className="p-8 text-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-6">
-                    <solution.icon className="h-8 w-8 text-primary-foreground" />
+                    <point.icon className="h-8 w-8 text-primary-foreground" />
                   </div>
                   <h3 className="text-xl font-semibold mb-4 text-card-foreground">
-                    {solution.title}
+                    {point.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {solution.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Why Us Section */}
-        <div className="animate-slide-up">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Waarom <span className="text-accent">GovGPT</span>?
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Niet zomaar een AI-tool, maar een complete oplossing die past bij de waarden en eisen van de overheid.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <Card key={index} className="shadow-card hover-scale bg-secondary/50">
-                <CardContent className="p-8 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-accent rounded-full mb-6">
-                    <benefit.icon className="h-8 w-8 text-accent-foreground" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-4 text-card-foreground">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {benefit.description}
-                  </p>
+                  <p className="text-muted-foreground">{point.description}</p>
                 </CardContent>
               </Card>
             ))}
