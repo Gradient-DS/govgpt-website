@@ -31,12 +31,12 @@ export const ProblemSolutionSection = () => {
     {
       icon: CheckCircle2,
       title: "Compliant by design",
-      description: "Voldoet direct aan EU AI Act, GDPR en ISO 27001 — zonder omwegen of achterafplakwerk"
+      description: "Voldoet direct aan EU AI Act, GDPR en ISO 27001, zonder omwegen of achterafplakwerk"
     },
     {
       icon: Globe,
       title: "Flexibel en soeverein",
-      description: "Open-source, 100% EU-hosted en zonder vendor lock-in — inzetbaar als SaaS of volledig on-premise"
+      description: "Open-source, 100% soeverein en zonder vendor lock-in, inzetbaar als SaaS of volledig on-premise"
     },
     {
       icon: BrainCog,
