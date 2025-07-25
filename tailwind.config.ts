@@ -61,7 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gov: {
+					blue: 'hsl(var(--gov-blue))',
+					'blue-light': 'hsl(var(--gov-blue-light))',
+					orange: 'hsl(var(--gov-orange))',
+					text: 'hsl(var(--gov-text))',
+					'text-muted': 'hsl(var(--gov-text-muted))'
 				}
+			},
+			fontFamily: {
+				sans: ['Inter', 'Source Sans Pro', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
