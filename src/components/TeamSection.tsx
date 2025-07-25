@@ -5,44 +5,44 @@ export const TeamSection = () => {
   const teamMembers = [
     {
       name: "Daniel",
-      role: "Strategie & Visie",
-      description: "Expert in overheids-AI strategie",
+      role: "Executive Advisor",
+      description: "Samenwerking en Visie",
       image: "👨‍💼"
     },
     {
       name: "Daan",
-      role: "CEO & Oprichter",
-      description: "Jarenlange ervaring in AI & overheid",
+      role: "Head of Strategy & Operations",
+      description: "Strategie en Uitvoering",
       image: "👨‍💻"
     },
     {
       name: "Lex",
-      role: "Lead Developer",
-      description: "Specialist in veilige AI-architectuur",
+      role: "Head of Product",
+      description: "Ontwikkeling en Innovatie",
       image: "👨‍🔬"
     },
     {
       name: "Aran",
-      role: "AI Specialist",
-      description: "Expert in machine learning & NLP",
+      role: "AI Architect",
+      description: "Architectuur & AI",
       image: "🧠"
     },
     {
       name: "Eduard",
-      role: "Security Expert",
-      description: "Specialist in cybersecurity & compliance",
+      role: "Security Specialist",
+      description: "Beveiliging, Compliance & Infrastructuur",
       image: "🔐"
     },
     {
       name: "Pascal",
-      role: "Onderwijs & Training",
-      description: "AI-educatie voor overheidsprofessionals",
+      role: "Head of Education",
+      description: "Technologie & Onderwijs",
       image: "📚"
     },
     {
       name: "Kees",
       role: "Business Development",
-      description: "Verbinding tussen technologie en praktijk",
+      description: "Technologie & Overheid",
       image: "🤝"
     }
   ];
