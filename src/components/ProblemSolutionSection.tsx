@@ -28,41 +28,36 @@ export const ProblemSolutionSection = () => {
   const solutions = [
     {
       icon: Shield,
-      title: "Soevereine Publieke AI",
-      description: "Volledig afgestemd op publieke waarden, met data-opslag binnen nationale/EU-grenzen. Volledig luchtgescheiden infrastructuur voor ongekende datasoevereiniteit."
+      title: "ChatGPT-ervaring, maar veilig",
+      description: "Dezelfde gebruiksvriendelijkheid, maar dan veiliger, sneller en verantwoordelijk"
     },
     {
-      icon: CheckCircle2,
-      title: "Compliance by Design",
-      description: "Vanaf dag één compliant met EU AI Act, GDPR en ISO 27001. Transparante audittrails en ethische waarborgen ingebouwd."
-    },
-    {
-      icon: Users,
-      title: "Mensgericht & Cognitieve Gezondheid",
-      description: "Chain of Craft™ methodologie versterkt menselijk oordeel. Anti-atrofie waarborgen behouden kritisch denken. Gebruikers behouden Override Authority."
+      icon: Globe,
+      title: "100% EU-hosted",
+      description: "ISO 27001-compliant infrastructuur, volledig open-source en transparant"
     },
     {
       icon: Wrench,
-      title: "Flexibel en Open",
-      description: "Platform en model agnostisch. Ondersteunt open standaarden en voorkomt vendor lock-in. Keuze tussen closed-source en open-source LLM's."
+      title: "Flexibel inzetbaar",
+      description: "Keuze tussen SaaS-oplossing of volledig on-premise implementatie"
     }
   ];
 
   const benefits = [
     {
-      icon: Globe,
-      title: "Transparantie & Verantwoording",
-      description: "Algoritmische verklaarbaarheid en democratische verantwoording ingebouwd in de kernarchitectuur"
+      icon: CheckCircle2,
+      title: "Geen vendor lock-in",
+      description: "Volledige keuzevrijheid in AI-modellen en leveranciers"
     },
     {
-      icon: Shield,
-      title: "Bewezen Track Record",
-      description: "Succesvolle AI-oplossingen bij (rijks)overheden. Unieke mix van AI engineering en security architectuur"
+      icon: Users,
+      title: "Chain of Craft™ aanpak",
+      description: "Unieke methode voor behoud van menselijke autonomie en controle"
     },
     {
       icon: Zap,
-      title: "Europa's Digitale Toekomst",
-      description: "Visie 2030: Europa als internationale referentiepunt voor democratische technologie en digitaal bestuur"
+      title: "Ervaren team",
+      description: "Getraind team met jarenlange overheids-ervaring en top-partners"
     }
   ];
 
@@ -108,8 +103,8 @@ export const ProblemSolutionSection = () => {
             </p>
           </div>
           
-           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-             {solutions.map((solution, index) => (
+          <div className="grid md:grid-cols-3 gap-8">
+            {solutions.map((solution, index) => (
               <Card key={index} className="shadow-card hover-scale bg-card">
                 <CardContent className="p-8 text-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-6">
