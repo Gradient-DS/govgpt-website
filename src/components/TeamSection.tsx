@@ -6,19 +6,19 @@ export const TeamSection = () => {
     {
       name: "Daniel",
       role: "Executive Advisor",
-      description: "Samenwerking en Visie",
+      description: "Samenwerking & Visie",
       image: "👨‍💼"
     },
     {
       name: "Daan",
       role: "Head of Strategy & Operations",
-      description: "Strategie en Uitvoering",
+      description: "Strategie & Uitvoering",
       image: "👨‍💻"
     },
     {
       name: "Lex",
       role: "Head of Product",
-      description: "Ontwikkeling en Innovatie",
+      description: "Ontwikkeling & Innovatie",
       image: "👨‍🔬"
     },
     {
