@@ -4,46 +4,34 @@ import { Linkedin, Github } from "lucide-react";
 export const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Daniel",
+      name: "Daniel Verloop",
       role: "Strategie & Visie",
-      description: "Expert in overheids-AI strategie",
+      description: "Strategisch leiderschap met duidelijke visie voor soevereine AI in Europa",
       image: "👨‍💼"
     },
     {
-      name: "Daan",
-      role: "CEO & Oprichter",
-      description: "Jarenlange ervaring in AI & overheid",
+      name: "Yannick Maltha",
+      role: "Business & Partnerships",
+      description: "CEO UbiOps - Enterprise-ready infrastructuur en ondernemerschap",
       image: "👨‍💻"
     },
     {
-      name: "Lex",
-      role: "Lead Developer",
-      description: "Specialist in veilige AI-architectuur",
-      image: "👨‍🔬"
+      name: "Kees van den Tempel",
+      role: "Netwerk & Adoptie",
+      description: "Uitgebreide overheidsrelaties en beleidsnetwerk",
+      image: "🤝"
     },
     {
-      name: "Aran",
-      role: "AI Specialist",
-      description: "Expert in machine learning & NLP",
+      name: "Aran Arunakiri",
+      role: "Lead Developer & AI Architect",
+      description: "Technische ruggengraat en AI-architectuur expert",
       image: "🧠"
     },
     {
-      name: "Eduard",
-      role: "Security Expert",
-      description: "Specialist in cybersecurity & compliance",
+      name: "Eduard Bakouev",
+      role: "Security & Platform Architect",
+      description: "Enterprise-grade veiligheid en platform architectuur",
       image: "🔐"
-    },
-    {
-      name: "Pascal",
-      role: "Onderwijs & Training",
-      description: "AI-educatie voor overheidsprofessionals",
-      image: "📚"
-    },
-    {
-      name: "Kees",
-      role: "Business Development",
-      description: "Verbinding tussen technologie en praktijk",
-      image: "🤝"
     }
   ];
 
@@ -60,7 +48,7 @@ export const TeamSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {teamMembers.map((member, index) => (
             <Card key={index} className="shadow-card hover-scale bg-card text-center">
               <CardContent className="p-6">
@@ -89,14 +77,14 @@ export const TeamSection = () => {
           ))}
         </div>
 
-        {/* Team credentials */}
-        <div className="text-center">
-          <Card className="shadow-card max-w-3xl mx-auto bg-card">
+        {/* Team credentials and partnerships */}
+        <div className="grid md:grid-cols-2 gap-8">
+          <Card className="shadow-card bg-card">
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4 text-card-foreground">
-                Bewezen expertise
+                Bewezen Expertise
               </h3>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div className="grid grid-cols-2 gap-6 text-center">
                 <div>
                   <div className="text-3xl font-bold text-primary mb-2">10+</div>
                   <p className="text-sm text-muted-foreground">Jaar AI-ervaring</p>
@@ -105,11 +93,27 @@ export const TeamSection = () => {
                   <div className="text-3xl font-bold text-accent mb-2">50+</div>
                   <p className="text-sm text-muted-foreground">Overheidsprojecten</p>
                 </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                  <p className="text-sm text-muted-foreground">Nederlands team</p>
-                </div>
               </div>
+              <p className="text-muted-foreground mt-4 text-sm">
+                Bewezen track record met succesvolle AI-oplossingen bij (rijks)overheden. 
+                Unieke mix van AI engineering, security architectuur en enterprise infrastructuur.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="shadow-card bg-secondary/50">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-semibold mb-4 text-card-foreground">
+                Enterprise Infrastructuur
+              </h3>
+              <div className="text-center mb-4">
+                <div className="text-4xl font-bold text-primary mb-2">UbiOps</div>
+                <p className="text-accent font-medium">Infrastructuurpartner</p>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Vanaf dag één een professioneel en schaalbaar platform, 
+                met bewezen expertise in de publieke sector en enterprise-grade veiligheid.
+              </p>
             </CardContent>
           </Card>
         </div>

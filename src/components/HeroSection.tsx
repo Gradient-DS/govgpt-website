@@ -27,7 +27,7 @@ export const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-white/20">
             <Shield className="h-4 w-4" />
-            <span className="text-sm font-medium">Veilig • Open Source • Nederland</span>
+            <span className="text-sm font-medium">🇪🇺 Europa's Digitale Soevereiniteit • Nu of Nooit</span>
           </div>
 
           {/* Main headline */}
