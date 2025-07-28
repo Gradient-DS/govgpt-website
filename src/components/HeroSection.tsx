@@ -25,40 +25,66 @@ export const HeroSection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-white/20">
-            <Shield className="h-4 w-4" />
-            <span className="text-sm font-medium">Veilig • Open Source • Nederland</span>
+          <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-accent/30">
+            <Shield className="h-4 w-4 text-accent" />
+            <span className="text-sm font-medium">Exclusief voor de Publieke Sector</span>
           </div>
 
           {/* Main headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            GovGPT: Soevereine
-            <span className="block text-accent">Generatieve AI</span>
-            <span className="block">voor de Overheid</span>
+            Hét veilige alternatief
+            <span className="block text-accent">voor ChatGPT</span>
+            <span className="block">exclusief voor de publieke sector</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Open-source. Veilig. In Nederland. Volledig compliant.
+            Soevereine, generatieve AI die 100% voldoet aan publieke waarden, wetgeving en ethische normen.
             <span className="block mt-2 text-lg text-white/80">
-              De ChatGPT-ervaring die overheden nodig hebben, zonder de risico's.
+              Beschikbaar in elke vorm: SaaS, on-prem, open of closed source – altijd veilig, altijd soeverein, altijd eigenaar van je eigen data.
             </span>
           </p>
 
-          {/* Key benefits */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12 text-sm">
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
+          {/* Extra message */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8 max-w-2xl mx-auto border border-white/20">
+            <p className="text-white/90 text-center">
+              <strong>Altijd inclusief uitgebreide training en nazorg</strong>, zodat organisaties verantwoord en maximaal profiteren van AI.
+            </p>
+          </div>
+
+          {/* USP badges */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8 text-sm max-w-4xl mx-auto">
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
               <Shield className="h-4 w-4" />
-              EU AI Act Ready
+              100% NL/EU data-opslag
             </div>
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
               <Users className="h-4 w-4" />
-              ISO 27001 Compliant
+              DPIA/FRIA compliant
             </div>
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
               <Zap className="h-4 w-4" />
-              On-premise mogelijk
+              AI Act & ISO 27001
             </div>
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
+              <Shield className="h-4 w-4" />
+              Geen vendor lock-in
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
+              <Users className="h-4 w-4" />
+              SaaS of on-premise
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
+              <Zap className="h-4 w-4" />
+              Training & nazorg
+            </div>
+          </div>
+
+          {/* Urgency message */}
+          <div className="bg-accent/20 backdrop-blur-sm rounded-lg p-4 mb-8 max-w-2xl mx-auto border border-accent/30">
+            <p className="text-white text-center font-medium">
+              ⚡ Door de grote vraag werken we met een wachtlijst. Slechts enkele plekken voor pilots, selectie bijna rond.
+            </p>
           </div>
 
           {/* Email capture */}
@@ -66,8 +92,14 @@ export const HeroSection = () => {
             <EmailCapture variant="hero" placeholder="je.naam@organisatie.nl" />
           </div>
 
-          {/* Secondary CTA */}
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-white font-semibold px-8"
+            >
+              Word pilotpartner
+            </Button>
             <Button
               variant="outline"
               size="lg"
@@ -75,13 +107,13 @@ export const HeroSection = () => {
               className="bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm"
             >
               <Play className="h-5 w-5" />
-              Bekijk de demo
+              Bekijk demo
             </Button>
             <a
               href="#contact"
               className="text-white/80 hover:text-white underline underline-offset-4 transition-colors"
             >
-              Of plan een gesprek →
+              Vraag info →
             </a>
           </div>
         </div>

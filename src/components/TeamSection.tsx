@@ -4,46 +4,60 @@ import { Linkedin, Github } from "lucide-react";
 export const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Daniel",
-      role: "Strategie & Visie",
-      description: "Expert in overheids-AI strategie",
+      name: "Daan Witte",
+      role: "Head of Strategy & Operations",
+      description: "Strategie en operationele excellentie",
+      drijfveer: "Publieke waarden centraal in AI-ontwikkeling",
+      linkedin: "https://www.linkedin.com/in/daan-witte-650684184/",
       image: "👨‍💼"
     },
     {
-      name: "Daan",
-      role: "CEO & Oprichter",
-      description: "Jarenlange ervaring in AI & overheid",
+      name: "Lex Lubbers", 
+      role: "Head of Product",
+      description: "Product ontwikkeling en gebruikerservaring",
+      drijfveer: "Intuïtieve AI-tools voor complexe overheidstaken",
+      linkedin: "https://www.linkedin.com/in/lex-lubbers/",
       image: "👨‍💻"
     },
     {
-      name: "Lex",
-      role: "Lead Developer",
-      description: "Specialist in veilige AI-architectuur",
-      image: "👨‍🔬"
+      name: "Kees van den Tempel",
+      role: "Advisor - Netwerk & Adoptie",
+      description: "Uitgebreide overheidsrelaties en adoptiestrategieën",
+      drijfveer: "Verbinding tussen technologie en overheidsbehoeften",
+      linkedin: "https://www.linkedin.com/in/keesvandentempel/",
+      image: "🤝"
     },
     {
-      name: "Aran",
-      role: "AI Specialist",
-      description: "Expert in machine learning & NLP",
+      name: "Daniel Verloop",
+      role: "Advisor - Strategie",
+      description: "Strategische visie en marktbenadering",
+      drijfveer: "Duurzame technologische vooruitgang voor de publieke sector",
+      linkedin: "https://www.linkedin.com/in/danielverloop",
+      image: "🎯"
+    },
+    {
+      name: "Aran Arunakiri",
+      role: "AI Architect",
+      description: "AI-architectuur en machine learning expertise",
+      drijfveer: "Veilige en betrouwbare AI-systemen",
+      linkedin: "https://www.linkedin.com/in/aran-arunakiri-9058831a/",
       image: "🧠"
     },
     {
-      name: "Eduard",
-      role: "Security Expert",
-      description: "Specialist in cybersecurity & compliance",
+      name: "Eduard Bakouev",
+      role: "Security Specialist",
+      description: "Cybersecurity en compliance expert",
+      drijfveer: "Onwrikbare beveiliging voor kritieke systemen",
+      linkedin: "https://www.linkedin.com/in/eduard-bakouev-282824112/",
       image: "🔐"
     },
     {
-      name: "Pascal",
-      role: "Onderwijs & Training",
-      description: "AI-educatie voor overheidsprofessionals",
-      image: "📚"
-    },
-    {
-      name: "Kees",
-      role: "Business Development",
-      description: "Verbinding tussen technologie en praktijk",
-      image: "🤝"
+      name: "Stefanie Wenting",
+      role: "Operations",
+      description: "Operationele processen en kwaliteitsborging",
+      drijfveer: "Excellente uitvoering en klanttevredenheid",
+      linkedin: "https://www.linkedin.com/in/stefanie-wenting/",
+      image: "⚙️"
     }
   ];
 
@@ -52,11 +66,10 @@ export const TeamSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Het team achter <span className="text-accent">GovGPT</span>
+            Partners & <span className="text-accent">Track Record</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Een bewezen team met jarenlange ervaring in AI, beveiliging en de publieke sector. 
-            Samen zorgen we voor verantwoorde AI-implementatie.
+            Gebouwd met een ervaren team en sterke infrastructuurpartners.
           </p>
         </div>
 
@@ -71,45 +84,39 @@ export const TeamSection = () => {
                 <p className="text-accent font-medium mb-3">
                   {member.role}
                 </p>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-sm text-muted-foreground mb-2">
                   {member.description}
                 </p>
+                <p className="text-xs text-accent mb-4 italic">
+                  "{member.drijfveer}"
+                </p>
                 
-                {/* Social links placeholder */}
-                <div className="flex justify-center gap-3">
-                  <button className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors">
+                {/* LinkedIn link */}
+                <div className="flex justify-center">
+                  <a 
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors"
+                  >
                     <Linkedin className="h-4 w-4" />
-                  </button>
-                  <button className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors">
-                    <Github className="h-4 w-4" />
-                  </button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Team credentials */}
-        <div className="text-center">
-          <Card className="shadow-card max-w-3xl mx-auto bg-card">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4 text-card-foreground">
-                Bewezen expertise
+        {/* Infrastructure partner */}
+        <div className="text-center mb-8">
+          <Card className="shadow-card max-w-2xl mx-auto bg-card">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-card-foreground">
+                Powered by UbiOps
               </h3>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">10+</div>
-                  <p className="text-sm text-muted-foreground">Jaar AI-ervaring</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-accent mb-2">50+</div>
-                  <p className="text-sm text-muted-foreground">Overheidsprojecten</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                  <p className="text-sm text-muted-foreground">Nederlands team</p>
-                </div>
-              </div>
+              <p className="text-muted-foreground">
+                Enterprise-ready infrastructuur met bewezen expertise in de publieke sector
+              </p>
             </CardContent>
           </Card>
         </div>

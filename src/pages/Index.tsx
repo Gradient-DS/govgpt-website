@@ -1,9 +1,14 @@
 import { HeroSection } from "@/components/HeroSection";
-import { ProblemSolutionSection } from "@/components/ProblemSolutionSection";
+import { PositioningSection } from "@/components/PositioningSection";
+import { WhyNotChatGPTSection } from "@/components/WhyNotChatGPTSection";
+import { UseCasesSection } from "@/components/UseCasesSection";
+import { USPSection } from "@/components/USPSection";
 import { DemoSection } from "@/components/DemoSection";
-import { WaitlistSection } from "@/components/WaitlistSection";
-import { SecuritySection } from "@/components/SecuritySection";
+import { ROIPricingSection } from "@/components/ROIPricingSection";
 import { TeamSection } from "@/components/TeamSection";
+import { RoadmapSection } from "@/components/RoadmapSection";
+import { FAQSection } from "@/components/FAQSection";
+import { MissionSection } from "@/components/MissionSection";
 import { FinalCTASection } from "@/components/FinalCTASection";
 import { Footer } from "@/components/Footer";
 
@@ -11,11 +16,16 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <ProblemSolutionSection />
+      <PositioningSection />
+      <WhyNotChatGPTSection />
+      <UseCasesSection />
+      <USPSection />
       <DemoSection />
-      <WaitlistSection />
-      <SecuritySection />
+      <ROIPricingSection />
       <TeamSection />
+      <RoadmapSection />
+      <FAQSection />
+      <MissionSection />
       <FinalCTASection />
       <Footer />
     </div>
