@@ -7,7 +7,7 @@ export const MissionSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Maatschappelijke <span className="text-accent">Missie</span>
+            Maatschappelijke missie
           </h2>
         </div>
 
@@ -52,12 +52,10 @@ export const MissionSection = () => {
             </div>
             
             <h3 className="text-2xl font-semibold mb-4 text-card-foreground">
-              Samen bouwen aan betere publieke AI
+              Ethiek, publieke waarden en controle centraal.
             </h3>
             <p className="text-lg text-muted-foreground">
-              Ethiek, publieke waarden en controle staan centraal in alles wat we doen. 
-              Samen met gebruikers bouwen we aan een betere publieke AI-oplossing die 
-              democratische waarden respecteert en versterkt.
+              Samen met gebruikers bouwen we aan een betere publieke AI-oplossing.
             </p>
           </CardContent>
         </Card>

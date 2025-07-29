@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { EmailCapture } from "./EmailCapture";
-import { ChevronDown, Play, Shield, Users, Zap } from "lucide-react";
+import { Play, Shield, Users, Zap, Database, CheckCircle, Globe, GraduationCap } from "lucide-react";
 
 export const HeroSection = () => {
   const scrollToDemo = () => {
@@ -9,7 +9,7 @@ export const HeroSection = () => {
   };
 
   const scrollToPilot = () => {
-    const pilotSection = document.getElementById("pilot");
+    const pilotSection = document.getElementById("waitlist");
     pilotSection?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -25,58 +25,38 @@ export const HeroSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-accent/30">
-            <Shield className="h-4 w-4 text-accent" />
-            <span className="text-sm font-medium">Exclusief voor de Publieke Sector</span>
-          </div>
 
           {/* Main headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            GovGPT: Hét veilige alternatief
-            <span className="block text-accent">voor ChatGPT</span>
-            <span className="block">gericht op de publieke sector</span>
+            GovGPT: Hét veilige alternatief voor ChatGPT
+            <span className="block text-accent">gericht op de publieke sector</span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Soevereine, generatieve AI die 100% voldoet aan publieke waarden, wetgeving en ethische normen.
-            <span className="block mt-2 text-lg text-white/80">
-              Beschikbaar in elke vorm: SaaS, on-prem, open of closed source – altijd veilig, altijd soeverein, altijd eigenaar van je eigen data.
-            </span>
-          </p>
-
-          {/* Extra message */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8 max-w-2xl mx-auto border border-white/20">
-            <p className="text-white/90 text-center">
-              <strong>Altijd inclusief uitgebreide training en nazorg</strong>, zodat organisaties verantwoord en maximaal profiteren van AI.
-            </p>
-          </div>
-
           {/* USP badges */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8 text-sm max-w-4xl mx-auto">
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
-              <Shield className="h-4 w-4" />
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8 text-base max-w-5xl mx-auto">
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-3 min-h-[56px] justify-center">
+              <Database className="h-4 w-4" />
               100% NL/EU data-opslag
             </div>
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
-              <Users className="h-4 w-4" />
-              DPIA/FRIA compliant
-            </div>
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
-              <Zap className="h-4 w-4" />
-              EU AI Act & ISO 27001
-            </div>
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
+
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-3 min-h-[56px] justify-center">
               <Shield className="h-4 w-4" />
+              EU AI Act & DPIA compliant
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-3 min-h-[56px] justify-center">
+              <CheckCircle className="h-4 w-4" />
+              Common Ground & HAVEN
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-3 min-h-[56px] justify-center">
+              <Globe className="h-4 w-4" />
               Geen vendor lock-in
             </div>
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-3 min-h-[56px] justify-center">
               <Users className="h-4 w-4" />
               SaaS of on-premise
             </div>
-            <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
-              <Zap className="h-4 w-4" />
+            <div className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-3 min-h-[56px] justify-center">
+              <GraduationCap className="h-4 w-4" />
               Training & nazorg
             </div>
           </div>
@@ -86,11 +66,6 @@ export const HeroSection = () => {
             <p className="text-white text-center font-medium">
               ⚡ Door de grote vraag werken we met een wachtlijst. Slechts enkele plekken voor pilots, selectie bijna rond.
             </p>
-          </div>
-
-          {/* Email capture */}
-          <div className="mb-8">
-            <EmailCapture variant="hero" placeholder="je.naam@organisatie.nl" />
           </div>
 
           {/* CTAs */}
@@ -117,15 +92,12 @@ export const HeroSection = () => {
               onClick={scrollToContact}
               className="bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm"
             >
-              Vraag info
+              Vraag informatie aan
             </Button>
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="h-6 w-6 text-white/60" />
-        </div>
+
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { Github, Mail, Linkedin } from "lucide-react";
+import { Mail, Phone, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -13,9 +13,24 @@ export const Footer = () => {
               Veilige, soevereine AI-oplossingen voor de Nederlandse publieke sector.
             </p>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>📧 info@govgpt.nl</p>
-              <p>📞 +31 6 16011582</p>
-              <p>🏢 LinkedIn: @govgptofficial</p>
+              <div className="flex items-center gap-2">
+                <Mail className="h-4 w-4" />
+                <a href="mailto:info@govgpt.nl" className="hover:text-primary transition-colors">
+                  info@govgpt.nl
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="h-4 w-4" />
+                <a href="tel:+31616011582" className="hover:text-primary transition-colors">
+                  +31 6 16011582
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Linkedin className="h-4 w-4" />
+                <a href="https://www.linkedin.com/company/govgptofficial" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  LinkedIn GovGPT
+                </a>
+              </div>
             </div>
           </div>
 
@@ -24,7 +39,7 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-foreground">Partners</h3>
             <ul className="space-y-2 text-sm">
               <li className="text-muted-foreground">
-                UbiOps - Infrastructure
+                UbiOps
               </li>
               <li className="text-muted-foreground">
                 Gradient Data Science
@@ -37,19 +52,9 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-foreground">Legal & Compliance</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
                   Privacy Statement
                 </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Toegankelijkheid
-                </a>
-              </li>
-              <li>
-                <span className="text-muted-foreground">
-                  Contactgegevens beschikbaar
-                </span>
               </li>
             </ul>
           </div>

@@ -5,7 +5,7 @@ export const FAQSection = () => {
   const faqs = [
     {
       question: "Kan ik kiezen hoe ik GovGPT uitrol?",
-      answer: "Ja: SaaS, on-prem, open/closed source - u kiest wat bij uw organisatie past."
+      answer: "Ja, SaaS, on-prem, open/closed source - u kiest wat bij uw organisatie past."
     },
     {
       question: "Blijf ik eigenaar van mijn data?",
@@ -13,15 +13,15 @@ export const FAQSection = () => {
     },
     {
       question: "Hoe veilig is het?",
-      answer: "Volledig compliant met DPIA/FRIA, EU AI Act, GDPR, ISO 27001 en overheidsstandaarden zoals Common Ground en HAVEN."
+      answer: "Volledig compliant (DPIA/FRIA, EU AI Act)."
     },
     {
       question: "Krijg ik begeleiding?",
-      answer: "Ja, altijd inclusief uitgebreide training en nazorg. Wij zorgen ervoor dat uw organisatie maximaal profiteert van AI."
+      answer: "Ja, wij bieden training en support."
     },
     {
       question: "Wat zijn de kosten?",
-      answer: "Transparant en concurrerend prijsmodel. Neem contact op voor een offerte op maat voor uw organisatie."
+      answer: "GovGPT is scherp geprijsd tegenover bestaande oplossingen als ChatGPT en Copilot. Vraag een offerte op voor een prijsinschatting op maat voor jouw organisatie."
     }
   ];
 
@@ -65,7 +65,7 @@ export const FAQSection = () => {
         <Card className="shadow-card max-w-2xl mx-auto mt-12 bg-accent/10 border-accent/20">
           <CardContent className="p-6 text-center">
             <p className="text-accent font-medium">
-              💡 Onthoud: <strong>Training & nazorg standaard inbegrepen</strong> bij alle GovGPT-pakketten
+              💡 Onthoud: <strong>Wij bieden training en nazorg</strong> voor organisaties
             </p>
           </CardContent>
         </Card>

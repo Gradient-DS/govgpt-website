@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Search, Zap, Users, BookOpen, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const RoadmapSection = () => {
   const roadmapItems = [
@@ -31,46 +32,25 @@ export const RoadmapSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-section">
+    <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12 animate-slide-up">
+        <div className="text-center mb-8 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Welke functionaliteiten kun je van <span className="text-accent">GovGPT verwachten</span>?
+            Wat kun je binnenkort van <span className="text-accent">GovGPT verwachten</span>?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Gebruikers kunnen meedenken & prioriteren.
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {roadmapItems.slice(0, 3).map((item, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          {roadmapItems.map((item, index) => (
             <Card key={index} className="shadow-card hover-scale bg-accent/5 border-accent/20">
-              <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-accent rounded-full mb-4">
-                  <item.icon className="h-6 w-6 text-accent-foreground" />
+              <CardContent className="p-4 text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-accent rounded-full mb-3">
+                  <item.icon className="h-5 w-5 text-accent-foreground" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2 text-card-foreground">
+                <h3 className="text-base font-semibold mb-1 text-card-foreground">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground text-sm">
-                  {item.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
-          {roadmapItems.slice(3).map((item, index) => (
-            <Card key={index + 3} className="shadow-card hover-scale bg-accent/5 border-accent/20">
-              <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-accent rounded-full mb-4">
-                  <item.icon className="h-6 w-6 text-accent-foreground" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-card-foreground">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-xs">
                   {item.description}
                 </p>
               </CardContent>
@@ -80,13 +60,19 @@ export const RoadmapSection = () => {
 
         {/* User involvement */}
         <Card className="shadow-card max-w-2xl mx-auto bg-card">
-          <CardContent className="p-8 text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-card-foreground">
+          <CardContent className="p-6 text-center">
+            <h3 className="text-xl font-semibold mb-3 text-card-foreground">
               Uw stem telt
             </h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground mb-4">
               Gebruikers kunnen meedenken & prioriteren. Samen bepalen we de richting van GovGPT.
             </p>
+            <Button 
+              onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-accent hover:bg-accent/90"
+            >
+              Doe mee aan de pilots
+            </Button>
           </CardContent>
         </Card>
       </div>

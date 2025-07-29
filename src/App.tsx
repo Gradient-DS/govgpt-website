@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom"; // ✅ use HashRouter
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { Privacy } from "./pages/Privacy";
 
 const queryClient = new QueryClient();
 
@@ -13,9 +14,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <HashRouter> 
+      <HashRouter basename="/govgpt"> 
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>

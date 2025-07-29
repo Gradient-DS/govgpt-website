@@ -6,39 +6,34 @@ export const TeamSection = () => {
     {
       name: "Daan Witte",
       role: "Head of Strategy & Operations",
-      description: "Strategie en operationele excellentie",
       drijfveer: "Publieke waarden centraal in AI-ontwikkeling",
       linkedin: "https://www.linkedin.com/in/daan-witte-650684184/",
       image: "👨‍💼"
     },
     {
-      name: "Lex Lubbers", 
+      name: "Lex Lubbers",
       role: "Head of Product",
-      description: "Product ontwikkeling en gebruikerservaring",
       drijfveer: "Intuïtieve AI-tools voor complexe overheidstaken",
       linkedin: "https://www.linkedin.com/in/lex-lubbers/",
       image: "👨‍💻"
     },
     {
-      name: "Kees van den Tempel",
-      role: "Advisor - Netwerk & Adoptie",
-      description: "Uitgebreide overheidsrelaties en adoptiestrategieën",
-      drijfveer: "Verbinding tussen technologie en overheidsbehoeften",
-      linkedin: "https://www.linkedin.com/in/keesvandentempel/",
-      image: "🤝"
-    },
-    {
       name: "Daniel Verloop",
-      role: "Advisor - Strategie",
-      description: "Strategische visie en marktbenadering",
+      role: "Advisor",
       drijfveer: "Duurzame technologische vooruitgang voor de publieke sector",
       linkedin: "https://www.linkedin.com/in/danielverloop",
       image: "🎯"
     },
     {
+      name: "Kees van den Tempel",
+      role: "Advisor",
+      drijfveer: "Verbinding tussen technologie en overheidsbehoeften",
+      linkedin: "https://www.linkedin.com/in/keesvandentempel/",
+      image: "🤝"
+    },
+    {
       name: "Aran Arunakiri",
       role: "AI Architect",
-      description: "AI-architectuur en machine learning expertise",
       drijfveer: "Veilige en betrouwbare AI-systemen",
       linkedin: "https://www.linkedin.com/in/aran-arunakiri-9058831a/",
       image: "🧠"
@@ -46,7 +41,6 @@ export const TeamSection = () => {
     {
       name: "Eduard Bakouev",
       role: "Security Specialist",
-      description: "Cybersecurity en compliance expert",
       drijfveer: "Onwrikbare beveiliging voor kritieke systemen",
       linkedin: "https://www.linkedin.com/in/eduard-bakouev-282824112/",
       image: "🔐"
@@ -54,7 +48,6 @@ export const TeamSection = () => {
     {
       name: "Stefanie Wenting",
       role: "Operations",
-      description: "Operationele processen en kwaliteitsborging",
       drijfveer: "Excellente uitvoering en klanttevredenheid",
       linkedin: "https://www.linkedin.com/in/stefanie-wenting/",
       image: "⚙️"
@@ -66,10 +59,23 @@ export const TeamSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Gebouwd met een <span className="text-accent">ervaren team</span>
+            Gebouwd met een <span className="text-accent">ervaren team en een missie</span>
           </h2>
         </div>
 
+        {/* Missie beschrijving */}
+        <Card className="shadow-card max-w-4xl mx-auto mb-12 bg-card">
+          <CardContent className="p-8 text-center">
+            <h3 className="text-2xl font-semibold mb-4 text-card-foreground">
+              Ethiek, publieke waarden en controle centraal.
+            </h3>
+            <p className="text-lg text-muted-foreground">
+              Samen met gebruikers bouwen we aan een betere publieke AI-oplossing.
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Team */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {teamMembers.map((member, index) => (
             <Card key={index} className="shadow-card hover-scale bg-card text-center">
@@ -80,12 +86,6 @@ export const TeamSection = () => {
                 </h3>
                 <p className="text-accent font-medium mb-3">
                   {member.role}
-                </p>
-                <p className="text-sm text-muted-foreground mb-2">
-                  {member.description}
-                </p>
-                <p className="text-xs text-accent mb-4 italic">
-                  "{member.drijfveer}"
                 </p>
                 
                 {/* LinkedIn link */}

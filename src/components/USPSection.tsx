@@ -29,7 +29,7 @@ export const USPSection = () => {
       description: "Continue updates op basis van feedback"
     },
     {
-      icon: HeadphonesIcon,
+      icon: Users,
       title: "Training & nazorg",
       description: "Uitgebreide begeleiding en nazorg"
     }
@@ -39,8 +39,8 @@ export const USPSection = () => {
     <section className="py-20 bg-gradient-section">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            GovGPT is <span className="text-accent">de oplossing</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="text-primary">Wat GovGPT</span> <span className="text-accent">uniek maakt</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             GovGPT is een onafhankelijke, publieke AI-oplossing - afgestemd op publieke waarden en democratische normen. Specifiek ontwikkeld voor (semi-)publieke organisaties.
@@ -64,21 +64,6 @@ export const USPSection = () => {
             </Card>
           ))}
         </div>
-
-        {/* Exclusivity card */}
-        <Card className="shadow-card max-w-2xl mx-auto bg-accent/10 border-accent/20">
-          <CardContent className="p-8 text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-card-foreground">
-              Exclusiviteit
-            </h3>
-            <p className="text-lg text-muted-foreground">
-              <strong>Wachtlijst + intensieve begeleiding</strong> voor early adopters
-            </p>
-            <p className="text-accent font-medium mt-2">
-              Beperkte beschikbaarheid voor maximale kwaliteit
-            </p>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
