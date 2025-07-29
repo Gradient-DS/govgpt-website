@@ -10,7 +10,7 @@ export const USPSection = () => {
     },
     {
       icon: Shield,
-      title: "Compliant met AI Act, GDPR, ISO 27001",
+      title: "Compliant met EU AI Act, GDPR, ISO 27001",
       description: "Plus Common Ground, HAVEN, NDS"
     },
     {
@@ -25,12 +25,12 @@ export const USPSection = () => {
     },
     {
       icon: Users,
-      title: "Continue updates op basis van feedback",
-      description: "Uw input bepaalt onze ontwikkeling"
+      title: "Prompts en agents specifiek voor de overheid",
+      description: "Continue updates op basis van feedback"
     },
     {
       icon: HeadphonesIcon,
-      title: "Altijd inclusief training & support",
+      title: "Training & nazorg",
       description: "Uitgebreide begeleiding en nazorg"
     }
   ];
@@ -40,10 +40,10 @@ export const USPSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            USP-blok / <span className="text-accent">Sterke Punten</span>
+            GovGPT is <span className="text-accent">de oplossing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Vanaf dag één:
+            GovGPT is een onafhankelijke, publieke AI-oplossing - afgestemd op publieke waarden en democratische normen. Specifiek ontwikkeld voor (semi-)publieke organisaties.
           </p>
         </div>
 

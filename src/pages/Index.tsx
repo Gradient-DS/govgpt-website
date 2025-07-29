@@ -3,6 +3,7 @@ import { PositioningSection } from "@/components/PositioningSection";
 import { WhyNotChatGPTSection } from "@/components/WhyNotChatGPTSection";
 import { UseCasesSection } from "@/components/UseCasesSection";
 import { USPSection } from "@/components/USPSection";
+import { WaitlistSection } from "@/components/WaitlistSection";
 import { DemoSection } from "@/components/DemoSection";
 import { ROIPricingSection } from "@/components/ROIPricingSection";
 import { TeamSection } from "@/components/TeamSection";
@@ -16,10 +17,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <PositioningSection />
       <WhyNotChatGPTSection />
       <UseCasesSection />
       <USPSection />
+      <WaitlistSection />
       <DemoSection />
       <ROIPricingSection />
       <TeamSection />

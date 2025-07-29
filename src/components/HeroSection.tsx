@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { EmailCapture } from "./EmailCapture";
 import { ChevronDown, Play, Shield, Users, Zap } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
 
 export const HeroSection = () => {
   const scrollToDemo = () => {
@@ -9,16 +8,18 @@ export const HeroSection = () => {
     demoSection?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToPilot = () => {
+    const pilotSection = document.getElementById("pilot");
+    pilotSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section 
-      className="relative min-h-screen flex items-center justify-center bg-gradient-hero text-white"
-      style={{
-        backgroundImage: `linear-gradient(135deg, rgba(27, 54, 93, 0.9), rgba(27, 54, 93, 0.7)), url(${heroBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero text-white">
       {/* Background overlay for better text readability */}
       <div className="absolute inset-0 bg-black/20"></div>
       
@@ -32,9 +33,9 @@ export const HeroSection = () => {
 
           {/* Main headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Hét veilige alternatief
+            GovGPT: Hét veilige alternatief
             <span className="block text-accent">voor ChatGPT</span>
-            <span className="block">exclusief voor de publieke sector</span>
+            <span className="block">gericht op de publieke sector</span>
           </h1>
 
           {/* Subtitle */}
@@ -64,7 +65,7 @@ export const HeroSection = () => {
             </div>
             <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
               <Zap className="h-4 w-4" />
-              AI Act & ISO 27001
+              EU AI Act & ISO 27001
             </div>
             <div className="flex items-center gap-2 bg-white/10 rounded-full px-3 py-2">
               <Shield className="h-4 w-4" />
@@ -96,6 +97,7 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
+              onClick={scrollToPilot}
               className="bg-accent hover:bg-accent/90 text-white font-semibold px-8"
             >
               Word pilotpartner
@@ -109,12 +111,14 @@ export const HeroSection = () => {
               <Play className="h-5 w-5" />
               Bekijk demo
             </Button>
-            <a
-              href="#contact"
-              className="text-white/80 hover:text-white underline underline-offset-4 transition-colors"
+            <Button
+              variant="outline"
+              size="lg"
+              onClick={scrollToContact}
+              className="bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm"
             >
-              Vraag info →
-            </a>
+              Vraag info
+            </Button>
           </div>
         </div>
 

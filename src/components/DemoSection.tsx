@@ -8,11 +8,8 @@ export const DemoSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Demo & <span className="text-accent">Pilotfase</span>
+            <span className="text-accent">Pilotfase</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
-            Ervaar GovGPT in actie - korte video met uitleg/demo van interface en features.
-          </p>
           
           {/* Urgency message */}
           <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 max-w-2xl mx-auto mb-8">

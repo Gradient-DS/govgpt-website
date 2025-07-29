@@ -40,11 +40,8 @@ export const UseCasesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Use-cases <span className="text-accent">(overheidspecifiek)</span>
+            Wat kun je doen met <span className="text-accent">GovGPT</span>?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Wat kun je doen met GovGPT?
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

@@ -11,7 +11,7 @@ export const FinalCTASection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto animate-slide-up">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Call to Action / <span className="text-accent">Contact</span>
+            <span className="text-accent">Contact</span>
           </h2>
           
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">

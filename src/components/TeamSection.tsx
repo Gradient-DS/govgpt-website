@@ -66,11 +66,8 @@ export const TeamSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Partners & <span className="text-accent">Track Record</span>
+            Gebouwd met een <span className="text-accent">ervaren team</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Gebouwd met een ervaren team en sterke infrastructuurpartners.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
@@ -112,7 +109,7 @@ export const TeamSection = () => {
           <Card className="shadow-card max-w-2xl mx-auto bg-card">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-card-foreground">
-                Powered by UbiOps
+                Powered by <a href="https://ubiops.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">UbiOps</a>
               </h3>
               <p className="text-muted-foreground">
                 Enterprise-ready infrastructuur met bewezen expertise in de publieke sector

@@ -35,10 +35,10 @@ export const RoadmapSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Roadmap / <span className="text-accent">Toekomstige Features</span>
+            Welke functionaliteiten kun je van <span className="text-accent">GovGPT verwachten</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Roadmap – Samen innoveren
+            Gebruikers kunnen meedenken & prioriteren.
           </p>
         </div>
 
