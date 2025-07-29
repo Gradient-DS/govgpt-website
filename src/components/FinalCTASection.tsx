@@ -45,7 +45,7 @@ export const FinalCTASection = () => {
                 </div>
                 <div className="bg-white/5 rounded-lg p-3 border border-white/10">
                   <h4 className="font-semibold text-white mb-1 text-sm">Vraag informatie</h4>
-                  <p className="text-white/80 text-xs">Meer weten over implementatie</p>
+                  <p className="text-white/80 text-xs">Meer weten over implementatie of kosten</p>
                 </div>
               </div>
               

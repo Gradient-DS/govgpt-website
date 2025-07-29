@@ -23,8 +23,8 @@ export const WhyNotChatGPTSection = () => {
     },
     {
       icon: Zap,
-      title: "Flexibel & open: SaaS, on-prem, open of closed source",
-      description: "Kies de oplossing die bij u past"
+      title: "Flexibel & open",
+      description: "SaaS of On-Premise. Open- of closed-source. U kiest."
     },
     {
       icon: Lock,
