@@ -1,5 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Github } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 export const TeamSection = () => {
   const teamMembers = [
@@ -51,6 +50,13 @@ export const TeamSection = () => {
       drijfveer: "Excellente uitvoering en klanttevredenheid",
       linkedin: "https://www.linkedin.com/in/stefanie-wenting/",
       image: "⚙️"
+    },
+    {
+      name: "Pascal Mariany",
+      role: "Lead Education",
+      drijfveer: "Kennisdeling en educatie voor een geïnformeerde overheid",
+      linkedin: "https://www.linkedin.com/in/pascalmariany/",
+      image: "📚"
     }
   ];
 
@@ -64,58 +70,47 @@ export const TeamSection = () => {
         </div>
 
         {/* Missie beschrijving */}
-        <Card className="shadow-card max-w-4xl mx-auto mb-12 bg-card">
-          <CardContent className="p-8 text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-card-foreground">
-              Ethiek, publieke waarden en controle centraal.
-            </h3>
-            <p className="text-lg text-muted-foreground">
-              Samen met gebruikers bouwen we aan een betere publieke AI-oplossing.
-            </p>
-          </CardContent>
-        </Card>
+        <div className="max-w-4xl mx-auto mb-12 p-8 text-center">
+          <h3 className="text-2xl font-semibold mb-4">
+            Ethiek, publieke waarden en controle centraal.
+          </h3>
+          <p className="text-lg text-muted-foreground">
+            Samen met gebruikers bouwen we aan een betere publieke AI-oplossing.
+          </p>
+        </div>
 
         {/* Team */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="shadow-card hover-scale bg-card text-center">
-              <CardContent className="p-6">
-                <div className="text-6xl mb-4">{member.image}</div>
-                <h3 className="text-xl font-semibold mb-1 text-card-foreground">
-                  {member.name}
-                </h3>
-                <p className="text-accent font-medium mb-3">
-                  {member.role}
-                </p>
-                
-                {/* LinkedIn link */}
-                <div className="flex justify-center">
-                  <a 
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors"
-                  >
-                    <Linkedin className="h-4 w-4" />
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
+            <div key={index} className="p-6 flex flex-col items-center text-center hover-scale">
+              <div className="text-6xl mb-4">{member.image}</div>
+              <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+              <p className="text-accent font-medium mb-3">{member.role}</p>
+              {/* LinkedIn link */}
+              <div className="flex justify-center">
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors"
+                >
+                  <Linkedin className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
           ))}
         </div>
 
         {/* Infrastructure partner */}
         <div className="text-center mb-8">
-          <Card className="shadow-card max-w-2xl mx-auto bg-card">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-card-foreground">
-                Powered by <a href="https://ubiops.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">UbiOps</a>
-              </h3>
-              <p className="text-muted-foreground">
-                Enterprise-ready infrastructuur met bewezen expertise in de publieke sector
-              </p>
-            </CardContent>
-          </Card>
+          <div className="max-w-2xl mx-auto p-6">
+            <h3 className="text-xl font-semibold mb-2">
+              Powered by <a href="https://ubiops.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">UbiOps</a>
+            </h3>
+            <p className="text-muted-foreground">
+              Enterprise-ready infrastructuur met bewezen expertise in de publieke sector
+            </p>
+          </div>
         </div>
       </div>
     </section>

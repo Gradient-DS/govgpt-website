@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { FileText, Users, Search, BookOpen, MessageSquare, HelpCircle, Plus, Zap, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -75,19 +74,17 @@ export const UseCasesSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {currentUseCases.map((useCase, index) => (
-            <Card key={index} className="shadow-card hover-scale">
-              <CardContent className="p-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary rounded-full mb-4">
-                  <useCase.icon className="h-6 w-6 text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-semibold mb-2 text-card-foreground">
-                  {useCase.title}
-                </h3>
-                <p className="text-muted-foreground text-sm">
-                  {useCase.description}
-                </p>
-              </CardContent>
-            </Card>
+            <div key={index} className="p-6 shadow-card hover-scale rounded-lg bg-card">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-primary rounded-full mb-4">
+                <useCase.icon className="h-6 w-6 text-primary-foreground" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">
+                {useCase.title}
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                {useCase.description}
+              </p>
+            </div>
           ))}
         </div>
 
@@ -104,39 +101,35 @@ export const UseCasesSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
           {futureFeatures.map((item, index) => (
-            <Card key={index} className="shadow-card hover-scale bg-accent/5 border-accent/20">
-              <CardContent className="p-4 text-center">
-                <div className="inline-flex items-center justify-center w-10 h-10 bg-accent rounded-full mb-3">
-                  <item.icon className="h-5 w-5 text-accent-foreground" />
-                </div>
-                <h3 className="text-base font-semibold mb-1 text-card-foreground">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground text-xs">
-                  {item.description}
-                </p>
-              </CardContent>
-            </Card>
+            <div
+              key={index}
+              className="p-4 text-center hover:bg-accent/5 rounded-lg transition-colors cursor-pointer"
+            >
+              <div className="inline-flex items-center justify-center w-10 h-10 bg-accent rounded-full mb-3">
+                <item.icon className="h-5 w-5 text-accent-foreground" />
+              </div>
+              <h3 className="text-base font-semibold">
+                {item.title}
+              </h3>
+            </div>
           ))}
         </div>
 
         {/* User involvement */}
-        <Card className="shadow-card max-w-2xl mx-auto bg-card">
-          <CardContent className="p-6 text-center">
-            <h3 className="text-xl font-semibold mb-3 text-card-foreground">
-              Uw stem telt
-            </h3>
-            <p className="text-muted-foreground mb-4">
-              Gebruikers kunnen meedenken & prioriteren. Samen bepalen we de richting van GovGPT.
-            </p>
-            <Button 
-              onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-accent hover:bg-accent/90"
-            >
-              Doe mee aan de pilots
-            </Button>
-          </CardContent>
-        </Card>
+        <div className="max-w-2xl mx-auto p-6 text-center bg-card shadow-card rounded-lg">
+          <h3 className="text-xl font-semibold mb-3">
+            Uw stem telt
+          </h3>
+          <p className="text-muted-foreground mb-4">
+            Gebruikers kunnen meedenken & prioriteren. Samen bepalen we de richting van GovGPT.
+          </p>
+          <Button
+            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-accent hover:bg-accent/90"
+          >
+            Doe mee aan de pilots
+          </Button>
+        </div>
       </div>
     </section>
   );
