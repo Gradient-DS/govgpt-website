@@ -7,56 +7,64 @@ export const TeamSection = () => {
       role: "Head of Strategy & Operations",
       drijfveer: "Publieke waarden centraal in AI-ontwikkeling",
       linkedin: "https://www.linkedin.com/in/daan-witte-650684184/",
-      image: "👨‍💼"
+      image: "👨‍💼",
+      isAdvisor: false
     },
     {
       name: "Lex Lubbers",
       role: "Head of Product",
       drijfveer: "Intuïtieve AI-tools voor complexe overheidstaken",
       linkedin: "https://www.linkedin.com/in/lex-lubbers/",
-      image: "👨‍💻"
-    },
-    {
-      name: "Daniel Verloop",
-      role: "Advisor",
-      drijfveer: "Duurzame technologische vooruitgang voor de publieke sector",
-      linkedin: "https://www.linkedin.com/in/danielverloop",
-      image: "🎯"
-    },
-    {
-      name: "Kees van den Tempel",
-      role: "Advisor",
-      drijfveer: "Verbinding tussen technologie en overheidsbehoeften",
-      linkedin: "https://www.linkedin.com/in/keesvandentempel/",
-      image: "🤝"
+      image: "👨‍💻",
+      isAdvisor: false
     },
     {
       name: "Aran Arunakiri",
       role: "AI Architect",
       drijfveer: "Veilige en betrouwbare AI-systemen",
       linkedin: "https://www.linkedin.com/in/aran-arunakiri-9058831a/",
-      image: "🧠"
+      image: "🧠",
+      isAdvisor: false
     },
     {
       name: "Eduard Bakouev",
       role: "Security Specialist",
       drijfveer: "Onwrikbare beveiliging voor kritieke systemen",
       linkedin: "https://www.linkedin.com/in/eduard-bakouev-282824112/",
-      image: "🔐"
+      image: "🔐",
+      isAdvisor: false
     },
     {
       name: "Stefanie Wenting",
       role: "Operations",
       drijfveer: "Excellente uitvoering en klanttevredenheid",
       linkedin: "https://www.linkedin.com/in/stefanie-wenting/",
-      image: "⚙️"
+      image: "⚙️",
+      isAdvisor: false
     },
     {
       name: "Pascal Mariany",
       role: "Lead Education",
       drijfveer: "Kennisdeling en educatie voor een geïnformeerde overheid",
       linkedin: "https://www.linkedin.com/in/pascalmariany/",
-      image: "📚"
+      image: "📚",
+      isAdvisor: false
+    },
+    {
+      name: "Kees van den Tempel",
+      role: "Advisor",
+      drijfveer: "Verbinding tussen technologie en overheidsbehoeften",
+      linkedin: "https://www.linkedin.com/in/keesvandentempel/",
+      image: "🤝",
+      isAdvisor: true
+    },
+    {
+      name: "Daniel Verloop",
+      role: "Advisor",
+      drijfveer: "Duurzame technologische vooruitgang voor de publieke sector",
+      linkedin: "https://www.linkedin.com/in/danielverloop",
+      image: "🎯",
+      isAdvisor: true
     }
   ];
 
@@ -82,17 +90,28 @@ export const TeamSection = () => {
         {/* Team */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {teamMembers.map((member, index) => (
-            <div key={index} className="p-6 flex flex-col items-center text-center hover-scale">
+            <div 
+              key={index} 
+              className="p-6 flex flex-col items-center text-center hover-scale"
+            >
               <div className="text-6xl mb-4">{member.image}</div>
               <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-              <p className="text-accent font-medium mb-3">{member.role}</p>
+              <p className={`font-medium mb-3 ${
+                member.isAdvisor ? "text-gray-600" : "text-accent"
+              }`}>
+                {member.role}
+              </p>
               {/* LinkedIn link */}
               <div className="flex justify-center">
                 <a
                   href={member.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors"
+                  className={`p-2 rounded-full transition-colors ${
+                    member.isAdvisor 
+                      ? "bg-gray-200 hover:bg-gray-300" 
+                      : "bg-secondary hover:bg-accent"
+                  }`}
                 >
                   <Linkedin className="h-4 w-4" />
                 </a>

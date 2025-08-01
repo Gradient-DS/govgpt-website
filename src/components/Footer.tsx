@@ -10,7 +10,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-foreground">GovGPT</h3>
             <p className="text-muted-foreground mb-4">
-              Veilige, soevereine AI-oplossingen voor de Nederlandse publieke sector.
+              Het soevereine AI-alternatief voor de publieke sector.
             </p>
             <div className="space-y-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
@@ -40,9 +40,6 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li className="text-muted-foreground">
                 UbiOps
-              </li>
-              <li className="text-muted-foreground">
-                Gradient Data Science
               </li>
             </ul>
           </div>

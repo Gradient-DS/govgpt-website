@@ -13,7 +13,7 @@ export const FAQSection = () => {
     },
     {
       question: "Hoe veilig is het?",
-      answer: "Volledig compliant (DPIA/FRIA, EU AI Act)."
+      answer: "Volledig compliant met EU AI Act, AVG en gehost op veilige Nederlandse infrastructuur."
     },
     {
       question: "Krijg ik begeleiding?",

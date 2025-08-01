@@ -6,7 +6,7 @@ export const USPSection = () => {
     {
       icon: Flag,
       title: "100% soeverein",
-      description: "Nederlandse data-opslag en logging met volledige controle over jouw data. Alle informatie blijft binnen Nederlandse grenzen en voldoet aan de hoogste veiligheidsstandaarden."
+      description: "Nederlandse data-opslag en logging met volledige controle over jouw data. Alle taalmodellen draaien in Nederland en alle informatie blijft binnen Nederlandse grenzen."
     },
     {
       icon: Shield,

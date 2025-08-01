@@ -3,18 +3,18 @@ import { AlertTriangle, Shield, Check, Globe, Zap, Users, Lock, HeadphonesIcon, 
 
 export const WhyNotChatGPTSection = () => {
   const govgptBenefits = [
-    "Volledige NL/EU datacontrole, geen Big Tech-afhankelijkheid",
-    "DPIA/FRIA uitgevoerd, geschikt voor overheid & onderwijs",
-    "Altijd eigenaar van je data, met audittrail & open standaarden",
-    "Vrijheid in uitrol: SaaS, on-prem, open/closed source",
-    "Wij bieden training & nazorg"
+    "100% soeverein",
+    "Volledig compliant met EU AI Act, AVG en WCAG",
+    "Menselijke regie centraal",
+    "Geen vendor lock-in",
+    "Specifiek voor de publieke sector"
   ];
 
   const usps = [
     {
       icon: Flag,
       title: "100% soeverein",
-      description: "Nederlandse data-opslag en logging met volledige controle over jouw data. Alle informatie blijft binnen Nederlandse grenzen en voldoet aan de hoogste veiligheidsstandaarden."
+      description: "Nederlandse data-opslag en logging met volledige controle over jouw data. Alle taalmodellen draaien in Nederland en alle informatie blijft binnen Nederlandse grenzen."
     },
     {
       icon: Shield,
@@ -64,11 +64,11 @@ export const WhyNotChatGPTSection = () => {
                 </h3>
               </div>
               <ul className="space-y-2 text-muted-foreground">
-                <li>❌ Privacy en datasoevereiniteit</li>
-                <li>❌ Controle over data en processen</li>
-                <li>❌ Transparantie en verantwoording</li>
-                <li>❌ Compliance met overheidsstandaarden</li>
-                <li>❌ Democratische waarden</li>
+                <li>❌ Gebrek aan datasoevereiniteit</li>
+                <li>❌ Onvoldoende naleving van wet- en regelgeving</li>
+                <li>❌ Weinig transparantie of menselijke regie</li>
+                <li>❌ Vendor lock-in</li>
+                <li>❌ Algemene oplossingen, niet toegespitst op de overheid</li>
               </ul>
             </CardContent>
           </Card>
