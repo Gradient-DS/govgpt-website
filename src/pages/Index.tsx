@@ -1,3 +1,4 @@
+import { Navigation } from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
 import { WhyNotChatGPTSection } from "@/components/WhyNotChatGPTSection";
 import { UseCasesSection } from "@/components/UseCasesSection";
@@ -11,14 +12,29 @@ import { Footer } from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <HeroSection />
-      <WhyNotChatGPTSection />
-      <DemoSection />
-      <WaitlistSection />
+      <Navigation />
+      <div id="hero">
+        <HeroSection />
+      </div>
+      <div id="why-govgpt">
+        <WhyNotChatGPTSection />
+      </div>
+      <div id="demo">
+        <DemoSection />
+      </div>
+      <div id="waitlist">
+        <WaitlistSection />
+      </div>
       <UseCasesSection />
-      <TeamSection />
-      <FAQSection />
-      <FinalCTASection />
+      <div id="team">
+        <TeamSection />
+      </div>
+      <div id="faq">
+        <FAQSection />
+      </div>
+      <div id="contact">
+        <FinalCTASection />
+      </div>
       <Footer />
     </div>
   );

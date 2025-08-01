@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertTriangle, Shield, Check, Globe, Zap, Users, Lock, HeadphonesIcon } from "lucide-react";
+import { AlertTriangle, Shield, Check, Globe, Zap, Users, Lock, HeadphonesIcon, Flag, UserCheck, Layers, BookOpen } from "lucide-react";
 
 export const WhyNotChatGPTSection = () => {
   const govgptBenefits = [
@@ -12,34 +12,34 @@ export const WhyNotChatGPTSection = () => {
 
   const usps = [
     {
-      icon: Globe,
-      title: "100% publieke AI, data-opslag binnen EU",
-      description: "Volledige controle over uw data"
+      icon: Flag,
+      title: "100% soeverein",
+      description: "Nederlandse data-opslag en logging met volledige controle over jouw data. Alle informatie blijft binnen Nederlandse grenzen en voldoet aan de hoogste veiligheidsstandaarden."
     },
     {
       icon: Shield,
-      title: "Compliant met EU AI Act, GDPR, ISO 27001",
-      description: "Plus Common Ground, HAVEN, NDS"
+      title: "Compliant met EU AI Act, AVG en WCAG",
+      description: "Volledig compliant met Europese en Nederlandse wetgeving, ontwikkeld volgens Common Ground en HAVEN standaarden. Toegankelijkheid en privacy zijn vanaf het begin ingebouwd in elke functionaliteit."
     },
     {
-      icon: Zap,
-      title: "Flexibel & open",
-      description: "SaaS of On-Premise. Open- of closed-source. U kiest."
+      icon: UserCheck,
+      title: "Menselijke regie centraal",
+      description: "Transparante bronvermelding en human-in-the-loop AI stimuleren kritisch denken. AI ondersteunt bij beslissingen, maar de menselijke controle en verantwoordelijkheid blijven altijd centraal."
     },
     {
-      icon: Lock,
+      icon: Globe,
       title: "Geen vendor lock-in",
-      description: "Behoud altijd uw vrijheid van keuze"
+      description: "Platform en model agnostisch met open-source mogelijkheden voor maximale flexibiliteit. U behoudt altijd de vrijheid om te kiezen en te wisselen tussen verschillende oplossingen."
     },
     {
-      icon: Users,
-      title: "Prompts en agents specifiek voor de overheid",
-      description: "Continue updates op basis van feedback"
+      icon: Layers,
+      title: "Functionaliteiten gericht op de publieke sector",
+      description: "Prompt library voor overheden en overheidsagents die specifiek zijn ontwikkeld voor publieke processen. Continue updates en aanpassingen op basis van feedback uit de praktijk."
     },
     {
-      icon: HeadphonesIcon,
-      title: "Training & nazorg",
-      description: "Uitgebreide begeleiding en nazorg"
+      icon: BookOpen,
+      title: "Training en begeleiding",
+      description: "Voor optimale adoptie bieden wij uitgebreide training aan voor organisaties. Support is standaard inbegrepen zonder meerprijs."
     }
   ];
 
