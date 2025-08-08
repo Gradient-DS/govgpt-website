@@ -60,8 +60,8 @@ export const FinalCTASection = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-3 w-3 text-white" />
-                    <a href="tel:+31616011582" className="text-white/90 hover:text-accent transition-colors text-sm">
-                      +31 6 16011582
+                    <a href="tel:+31612345678" className="text-white/90 hover:text-accent transition-colors text-sm">
+                      +31 6 12345678
                     </a>
                   </div>
                   <div className="flex items-center gap-2">

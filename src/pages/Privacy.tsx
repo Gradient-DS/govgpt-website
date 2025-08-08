@@ -135,7 +135,7 @@ export const Privacy = () => {
                   <p className="text-muted-foreground">
                     <strong>GovGPT</strong><br />
                     Email: <a href="mailto:info@govgpt.nl" className="text-primary hover:underline">info@govgpt.nl</a><br />
-                    Telefoon: <a href="tel:+31616011582" className="text-primary hover:underline">+31 6 16011582</a><br />
+                    Telefoon: <a href="tel:+31612345678" className="text-primary hover:underline">+31 6 12345678</a><br />
                     LinkedIn: <a href="https://www.linkedin.com/company/govgptofficial" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">LinkedIn GovGPT</a>
                   </p>
                 </div>

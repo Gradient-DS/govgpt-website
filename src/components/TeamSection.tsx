@@ -3,22 +3,6 @@ import { Linkedin } from "lucide-react";
 export const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Daan Witte",
-      role: "Head of Strategy & Operations",
-      drijfveer: "Publieke waarden centraal in AI-ontwikkeling",
-      linkedin: "https://www.linkedin.com/in/daan-witte-650684184/",
-      image: "👨‍💼",
-      isAdvisor: false
-    },
-    {
-      name: "Lex Lubbers",
-      role: "Head of Product",
-      drijfveer: "Intuïtieve AI-tools voor complexe overheidstaken",
-      linkedin: "https://www.linkedin.com/in/lex-lubbers/",
-      image: "👨‍💻",
-      isAdvisor: false
-    },
-    {
       name: "Aran Arunakiri",
       role: "AI Architect",
       drijfveer: "Veilige en betrouwbare AI-systemen",
